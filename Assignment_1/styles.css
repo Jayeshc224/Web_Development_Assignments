@@ -1,0 +1,311 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.centered h1 {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+/* Header */
+header {
+    background-color: #005f73;
+    color: #edf6f9;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 { margin: 0; }
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #edf6f9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffbf69;
+}
+
+/* Footer */
+.centered footer {
+    background-color: #005f73;
+    color: #edf6f9;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Forms and Inputs */
+form {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label { display: block; margin-bottom: 5px; }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Buttons and Inputs */
+form input[type="submit"],
+form input[type="button"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover,
+button:hover {
+    background-color: #21867a;
+}
+
+
+/* Table Styling */
+table {
+    width: 100%; /* Full-width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+caption {
+    font-size: 1.5em; /* Larger font for caption */
+    font-weight: bold; /* Bold font for caption */
+    margin-bottom: 10px; /* Space below the caption */
+    color: #005f73; /* Caption color */
+}
+
+th, td {
+    padding: 10px; /* Padding within cells */
+    border-bottom: 1px solid #ddd; /* Border for each cell */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #005f73; /* Background color for headers */
+    color: white; /* Text color for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra-striping for rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Hover effect for rows */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Block display for responsive layout */
+    }
+
+    th, td {
+        text-align: right; /* Right align text in block display */
+    }
+
+    td:before {
+        content: attr(data-label); /* Display data-label before content */
+        float: left; /* Float label to the left */
+        font-weight: bold; /* Bold font for label */
+    }
+
+    td:last-child {
+        border-bottom: 0; /* Remove bottom border for the last cell */
+    }
+}
+
+.audio-box {
+    background-color: #e0f7fa; /* Light blue background, change as needed */
+    padding: 20px; /* Spacing inside the box */
+    margin: 20px 0; /* Spacing outside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+
+
+/* Confirmation Page Styles */
+#confirmation { text-align: center; }
+
+#confirmationDetails {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul { flex-direction: column; }
+    nav ul li { margin: 10px 0; }
+    form, #confirmationDetails {
+        max-width: 90%;
+    }
+}
+
+.centered {
+    text-align: center; /* Center align text */
+    margin: auto; /* Center the section itself */
+    max-width: 800px; /* Or any max-width you prefer */
+    width: 100%; /* Take up full width */
+}
+
+/* Centering the table */
+.centered table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Centering video and audio */
+.centered video, 
+.centered audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Additional styling for responsive design */
+@media screen and (max-width: 768px) {
+    .centered {
+        padding: 0 10px; /* Add padding on smaller screens */
+    }
+}
+
+header, footer {
+    background-color: #005f73; /* Same background color for header and footer */
+    color: #edf6f9; /* Text color */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding for spacing */
+    margin:20px;
+    width: 100%; /* Full width */
+}
+
+/* Ensure header and footer content is centered and has a max-width */
+header .centered, footer .centered {
+    margin: auto;
+    max-width: 900px; /* Or any max-width you prefer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the navigation menu is horizontally aligned and centered */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #edf6f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.booking-title {
+    text-align: center; /* Center the text */
+    background-color: #4CAF50; /* Example background color, change as needed */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    margin: 20px 0; /* Margin around the element */
+}
+
+.confirmation-title {
+    text-align: center; /* Center the text */
+    background-color: #4CAF50; /* Example background color, change as needed */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    margin: 20px 0; /* Margin around the element */
+}
+
+.contact-title {
+    text-align: center; /* Center the text */
+    background-color: #4CAF50; /* Example background color, change as needed */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    margin: 20px 0; /* Margin around the element */
+}
+
+
+#logo{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+#galleryImg{
+
+    width: 300px;
+    height: 300px;
+}
+.text{
+text-align:center;
+}

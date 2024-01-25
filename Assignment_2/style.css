@@ -1,0 +1,214 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, nav, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery figure {
+    flex-basis: calc(33.333% - 10px);
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery figcaption {
+    color: #666;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #005c83;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header {
+    background-color: #005c83;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text h1, .header-text nav {
+    margin: 0;
+}
+
+.header-image img {
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+    /*border-radius: 50%; /* Optional: for round image */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    color: black; /* Or any color you prefer for the text */
+    text-decoration: none;
+    border: 1px solid black; /* Optional: adds a border */
+    border-radius: 5px; /* Optional: rounds the corners */
+    font-weight: bold; /* Optional: makes the text bold */
+    transition: background-color 0.3s, color 0.3s; /* Optional: adds a hover effect */
+}
+
+.download-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.image{
+   
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery figure {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 365px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .gallery figure {
+        flex-basis: 100%;
+    }
+}
+
+* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#contact .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+#contact .contact-info .contact-column:first-child {
+    background-color: #f0f0f0; /* Light grey for the first column */
+}
+
+#contact .contact-info .contact-column:last-child {
+    background-color: #e0e0e0; /* Slightly darker grey for the second column */
+}
+
+@media (max-width: 768px) {
+    #contact .contact-info {
+        grid-template-columns: 1fr;
+    }
+    #contact .contact-info .contact-column {
+        background-color: transparent; /* Resets background color for mobile */
+    }
+}

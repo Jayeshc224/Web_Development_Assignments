@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<h1 class="heading">Jayesh Chindarkar - 002833099</h1>
+	<table id="myTable">
+		<tr id="table-head">
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+			<th class="delete-edit-column">DELETE</th>
+    		<th class="delete-edit-column">EDIT</th>
+		</tr>
+		<tr student-number="1">
+			<td><input type="checkbox" /><br /><br /><img src="down.png" width="25px" /></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="dropDownTextArea"><td colspan="8">
+			Advisor: Advisor 1<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br />
+		</td></tr>
+		<tr student-number="2">
+			<td><input type="checkbox"/><br/><br/><img src="down.png" width="25px" /></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="dropDownTextArea"><td colspan="8">
+			Advisor: Advisor 2<br/><br/>
+			Award Details<br/>
+			Summer 1-2014(TA)<br/>
+			Budget Number: <br/>
+			Tuition Number: <br/>
+			Comments:<br/><br/><br/>
+			Award Status:<br/>
+		</td></tr>
+		<tr student-number="3">
+			<td><input type="checkbox"/><br/><br/><img src="down.png" width="25px" /></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="dropDownTextArea"><td colspan="8">
+			Advisor: Advisor 3<br/><br/>
+			Award Details<br/>
+			Summer 1-2014(TA)<br/>
+			Budget Number: <br/>
+			Tuition Number: <br/>
+			Comments:<br/><br/><br/>
+			Award Status:<br/>
+		</td></tr>
+	</table>
+
+	<br /><br />
+	
+	<button id="button" type="submit" disabled>SUBMIT SELECTED AWARDS</button>
+	<button id="add">Add New Student</button>
+	<div id="editPopup" class="popup">
+		<div class="popup-content">
+			<span id="popupTitle" class="popup-title"></span>
+			<div id="studentDetails" class="student-details"></div>
+			<button id="updateButton" class="popup-button">Update</button>
+			<button id="cancelButton" class="popup-button">Cancel</button>
+		</div>
+	</div>
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+	
+</body>
+</html>

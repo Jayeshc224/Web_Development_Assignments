@@ -1,0 +1,92 @@
+#myTable input {
+	margin-left: 5px;
+}
+
+#myTable {
+	border:2px solid green;
+	border-collapse: collapse;
+	margin: 30px 30px 20px 40px;
+}
+#myTable td, th {
+	border:1px solid green;
+	padding: 5px;
+}
+#myTable th {
+	color: #fff;
+	background-color: #a7c942;
+}
+
+#button {
+	color:#fff;
+	border-radius: 3px;
+	margin-left: 180px;
+	background-color: orange;
+	border:2px solid orange;
+	cursor: pointer;
+}
+
+.dropDownTextArea {
+	display: none; /* Initially hide all dropDownTextArea rows */
+}
+  
+  /* Style for disabled button */
+#button:disabled {
+	background-color: #ccc; /* Change to your desired background color for disabled state */
+	border: 2px solid #ccc;
+	color: #999; /* Change to your desired text color for disabled state */
+	cursor: not-allowed; /* Change cursor to not-allowed for disabled buttons */
+}
+
+/* Style for the popup overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Style for the popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Adjust the maximum width as needed */
+    text-align: center;
+}
+
+/* Style for the popup title */
+.popup-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the student details in the popup */
+.student-details {
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons in the popup */
+.popup-button {
+    padding: 10px 20px;
+    background-color: #0074d9; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style for the Cancel button */
+.popup-button.cancel-button {
+    background-color: #ccc; /* Cancel button color */
+}

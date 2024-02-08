@@ -1,0 +1,68 @@
+label {
+    float: left;
+    width: 150px;
+}
+
+#container {
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+}
+
+main {
+    padding: 50px;
+}
+table {
+width: 100%;
+margin-top: 20px;
+border-collapse: collapse; /* Collapse borders */
+}
+th, td {
+text-align: left;
+padding: 8px; /* Add more padding to table cells */
+}
+th {
+background-color: #f2f2f2; /* Light grey background for header */
+color: #333; /* Dark text for contrast */
+}
+tr:nth-child(even) {
+background-color: #f9f9f9; /* Zebra striping for rows */
+}
+tr:hover {
+background-color: #e8f4f8; /* Light blue background on row hover */
+}
+input[type="button"], input[type="reset"] {
+background-color: #086edc; /* Green background for buttons */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px; /* Rounded corners for buttons */
+}
+input[type="button"]:hover, input[type="reset"]:hover {
+background-color: #086edc; /* Darker green on hover */
+}
+
+table {
+border-spacing: 0;
+border: 2px solid #086edc;
+}
+
+th, td {
+border: 1px solid #ddd; /* Light grey border for cells */
+text-align: left;
+padding: 8px;
+}
+
+th {
+background-color: #086edc;
+color: white;
+}
+h2 {
+text-align: center;
+}

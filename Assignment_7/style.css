@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('view.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Add an overlay to give the image some dim effect if needed */
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+h1 {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative; /* To position it relative to its normal position */
+    margin-bottom: 10px; /* Space between the h1 and the form/div */
+    z-index: 1;
+}
+
+#loginForm, #calculator {
+    position: relative; /* For z-index to take effect */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+/* Continue styling other elements as required */
+
+
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 0.875em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Specific Adjustments */
+#loginForm, #calculator {
+    margin: auto;
+}
+
+#calculator div, #loginForm div {
+    text-align: left;
+    margin: 10px 0;
+}
+
+#result {
+    background-color: #e9e9e9;
+    font-weight: bold;
+}

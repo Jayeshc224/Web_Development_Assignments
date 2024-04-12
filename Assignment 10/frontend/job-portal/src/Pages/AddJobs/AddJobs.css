@@ -1,0 +1,45 @@
+#job-details {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+  
+.add-job-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input#name,
+input#title,
+input#salary,
+input#description {
+    width: 300px;
+}
+.add-job-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+}
+
+.add-job-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+
+    input {
+        width: 200px;
+    }
+}

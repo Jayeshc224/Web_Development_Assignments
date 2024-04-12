@@ -1,0 +1,52 @@
+.user-header {
+    text-align: center;
+}
+.table-container {
+    display: grid;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+thead th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tbody td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #e2e2e2;
+}
+  
+@media (max-width: 768px) {
+
+    .user-header {
+        font-size: 18px;
+    }
+    thead th,
+    tbody td {
+        padding: 4px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .user-header {
+        font-size: 14px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 2px;
+        font-size: 12px;
+    }
+}

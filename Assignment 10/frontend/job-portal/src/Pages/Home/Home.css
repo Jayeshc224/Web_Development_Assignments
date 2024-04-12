@@ -1,0 +1,36 @@
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+  .testimonial {
+    flex: 0 0 auto;
+    text-align: center; 
+  }
+
+  .testimonial:last-child {
+    margin-right: 0;
+  }
+
+  .testimonial img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .testimonial p {
+    margin: 20px 0;
+  }
+
+  .author {
+    font-style: italic;
+  }
+
+  .header {
+    text-align: center;
+    margin-top: 30px;
+  }

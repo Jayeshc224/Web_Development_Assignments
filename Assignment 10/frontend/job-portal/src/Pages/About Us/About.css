@@ -1,0 +1,13 @@
+.aboutUs
+{
+  border-radius: 15px;
+  margin:  120px;
+  padding: 15px;
+  box-shadow: 5px 5px 20px white;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUs {
+    margin:  0;
+  }
+}

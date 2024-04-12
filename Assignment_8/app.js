@@ -8,7 +8,7 @@ const upload = multer({ dest: 'images/' }); // Destination folder for uploaded i
 
 app.use(express.json());
 
-// Connect to MongoDB
+
 connectToDb((err) => {
     if (err) {
         console.error('Error connecting to MongoDB:', err);
@@ -17,7 +17,7 @@ connectToDb((err) => {
     console.log('Connected to MongoDB');
 });
 
-// User Creation
+
 app.post('/user/create', async (req, res) => {
     const { fullName, email, password } = req.body;
 
